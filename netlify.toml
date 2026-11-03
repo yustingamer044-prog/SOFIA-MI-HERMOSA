@@ -1,0 +1,8 @@
+[build]
+  # Install dependencies first when they are missing (e.g. CLI deploys from a clean checkout)
+  command = "[ -x node_modules/.bin/vite ] || npm ci --no-audit --no-fund; npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Build the TanStack Start server for Netlify instead of the Cloudflare default
+  NITRO_PRESET = "netlify"
