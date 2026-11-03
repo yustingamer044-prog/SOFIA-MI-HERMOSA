@@ -1,2 +1,8 @@
-"node_modules/" 
-".output/" 
+node_modules/
+.output/
+.wrangler/
+dist/
+.netlify/
+.env
+.env.*
+CLAUDE.local.md
